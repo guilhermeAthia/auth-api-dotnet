@@ -1,0 +1,25 @@
+@Auth_HostAddress = http://localhost:5277
+
+POST {{Auth_HostAddress}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "guilhermebarros@email.com",
+  "password": "b123123"
+}
+
+###
+
+POST {{Auth_HostAddress}}/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstName": "guilherme",
+    "lastName": "barros",
+    "email": "guilhermebarros@email.com",
+    "password": "b123123"
+}
+
+###
